@@ -1,21 +1,13 @@
-mysql> select * from addressbook;
-+-----------+----------+-------+--------------+----------+--------+---------+--------------------+----+----------+------------+
-| firstname | lastname | city  | address      | state    | zip    | phoneNo | email              | id | name     | type       |
-+-----------+----------+-------+--------------+----------+--------+---------+--------------------+----+----------+------------+
-| shailesh  | dubey    | surat | sitanagar-3  | gujarat  | 234343 |  787648 | shailesh@gmail.com |  1 | self     | family     |
-| love      | dubey    | surat | sitanagar-3  | gujarat  | 234343 |  787648 | love@gmail.com     |  2 | self     | family     |
-| ashok     | dubey    | surat | sitanagar-3  | mumbai   | 234343 |  787648 | ashok@gmail.com    |  3 | self     | family     |
-| abhishek  | dubey    | surat | sitanagar-5  | karela   | 234343 |  787648 | abhishek@gmail.com |  4 | friends  | friend     |
-| stanley   | dubey    | hubli | sitanagar-9  | karnatak | 234343 |  787648 | stanley@gmail.com  |  5 | friends  | friend     |
-| numan     | dubey    | bihar | sitanagar-77 | karnatak | 234343 |  787648 | numan@gmail.com    |  6 | friends  | friend     |
-| rahul     | dubey    | ara   | sitanagar-77 | baliya   | 234343 |  787648 | rahul@gmail.com    |  7 | gollegue | profesonal |
-+-----------+----------+-------+--------------+----------+--------+---------+--------------------+----+----------+------------+
+mysql> SELECT * FROM ADDRESSBOOK;
++-----------+----------+-------+--------------+----------+--------+---------+--------------------+--------------+----+----------+------------+
+| firstname | lastname | city  | address      | state    | zip    | phoneNo | email              | ADDRESSBOOK  | id | name     | type       |
++-----------+----------+-------+--------------+----------+--------+---------+--------------------+--------------+----+----------+------------+
+| shailesh  | dubey    | surat | sitanagar-3  | gujarat  | 234343 |  787648 | shailesh@gmail.com | ADDRESSBOOK2 |  1 | self     | family     |
+| love      | dubey    | surat | sitanagar-3  | gujarat  | 234343 |  787648 | love@gmail.com     | ADDRESSBOOK1 |  2 | self     | family     |
+| ashok     | dubey    | surat | sitanagar-3  | mumbai   | 234343 |  787648 | ashok@gmail.com    | ADDRESSBOOK1 |  3 | self     | family     |
+| abhishek  | dubey    | surat | sitanagar-5  | karela   | 234343 |  787648 | abhishek@gmail.com | ADDRESSBOOK2 |  4 | friends  | friend     |
+| stanley   | dubey    | hubli | sitanagar-9  | karnatak | 234343 |  787648 | stanley@gmail.com  | ADDRESSBOOK1 |  5 | friends  | friend     |
+| numan     | dubey    | bihar | sitanagar-77 | karnatak | 234343 |  787648 | numan@gmail.com    | ADDRESSBOOK2 |  6 | friends  | friend     |
+| rahul     | dubey    | ara   | sitanagar-77 | baliya   | 234343 |  787648 | rahul@gmail.com    | ADDRESSBOOK2 |  7 | gollegue | profesonal |
++-----------+----------+-------+--------------+----------+--------+---------+--------------------+--------------+----+----------+------------+
 7 rows in set (0.00 sec)
-
-mysql> select count(*) from addressbook where type = 'family';
-+----------+
-| count(*) |
-+----------+
-|        3 |
-+----------+
-1 row in set (0.00 sec)
